@@ -1,0 +1,29 @@
+# hostfile for the QuaCS cluster
+# J. Dougherty	Spring 2015
+# adapted from:
+# gustav.informatik.tu-chemnitz.de/open-mpi/faq/?category=running
+#
+# The following nodes are single processor machines in the cluster;
+# uncomment the line with the nodes you want available for you
+# LAM (Local Area Multicomputer):
+
+# NOTE: do NOT use turing!!
+
+#yao.cs.haverford.edu slots=4 max-slots=4
+#cook.cs.haverford.edu slots=4 max-slots=4
+#lovelace.cs.haverford.edu slots=4 max-slots=4
+#curry.cs.haverford.edu slots=4 max-slots=4
+kruskal.cs.haverford.edu slots=4 max-slots=4
+easley.cs.haverford.edu slots=4 max-slots=4
+# liskov.cs.haverford.edu slots=4 max-slots=4
+# vonahn.cs.haverford.edu slots=4 max-slots=4
+# dean.cs.haverford.edu slots=4 max-slots=4
+# blum.cs.haverford.edu slots=4 max-slots=4
+# hopper.cs.haverford.edu slots=4 max-slots=4
+# goldwasser.cs.haverford.edu slots=4 max-slots=4
+
+# The following node is a dual-processor machine:
+# bar.example.com slots=2
+# The following node is a quad-processor machine, and we absolutely
+# want to disallow over-subscribing it:
+# yow.example.com slots=4 max-slots=4
